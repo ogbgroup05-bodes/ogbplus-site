@@ -268,6 +268,26 @@ function envoyerWhatsApp() {
     window.open(`https://wa.me/237673574000?text=${message}`);
 }
 </script>
+<script>
+let images = [
+  "fibre.jpeg.png",
+  "presentation.jpeg",
+  "fibre.jpeg1.png"
+];
 
+let i = 0;
+
+function next() {
+  i++;
+  if (i >= images.length) i = 0;
+  document.getElementById("slide").src = images[i];
+}
+
+function prev() {
+  i--;
+  if (i < 0) i = images.length - 1;
+  document.getElementById("slide").src = images[i];
+}
+</script>
 </body>
 </html>
