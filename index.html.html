@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>OGBplus - Internet & TV Douala</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #16a34a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+}
+
+/* SLIDER GRAND FORMAT */
+.slider {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ANIMATION */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    45% { transform: translateX(0); }
+
+    50% { transform: translateX(-100%); }
+    95% { transform: translateX(-100%); }
+
+    100% { transform: translateX(0); }
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+
+/* BUTTON */
+.btn {
+    background: #2563eb;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.basic, .pro {
+    background: #ccff00; /* vert citron */
+}
+
+.premium {
+    background: yellow;
+}
+
+/* TV SECTION */
+.tv {
+    background: #020617;
+    padding: 30px;
+    text-align: center;
+}
+
+/* PAYMENT */
+.payment {
+    background: white;
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+/* FORM */
+form {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+
+/* CONTACT */
+.contact a {
+    display: block;
+    margin: 10px auto;
+    width: 260px;
+    background: #25D366;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+🚀 OGBplus - Fibre & TV Douala
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="fibre.jpeg.png">
+        <img src="presentation.jpeg.png">
+    </div>
+</div>
+
+<section class="hero">
+<h1>Internet Ultra Rapide + TV Numérique</h1>
+
+<a href="https://wa.me/237673574000">
+<button class="btn">📲 Commander</button>
+</a>
+</section>
+
+<!-- OFFRES INTERNET -->
+<section class="cards">
+
+<div class="card basic">
+<h3>Pack Basic</h3>
+<p>10 Mbps</p>
+<h2>10 000 FCFA</h2>
+</div>
+
+<div class="card pro">
+<h3>Pack Pro</h3>
+<p>20 Mbps</p>
+<h2>20 000 FCFA</h2>
+</div>
+
+<div class="card premium">
+<h3>Pack Premium</h3>
+<p>50 Mbps</p>
+<h2>35 000 FCFA</h2>
+</div>
+
+</section>
+
+<!-- TV -->
+<section class="tv">
+<h2>📺 TV Numérique</h2>
+<p>Décodeur Sweecom & Creolink</p>
+
+<p>📡 Installation : <b>25 000 FCFA</b></p>
+<p>🔥 Promotion : <b>15 000 FCFA + 1 mois gratuit</b></p>
+
+<p>📺 Abonnement :</p>
+<p>3000 FCFA / mois</p>
+<p>5000 FCFA / mois</p>
+
+<a href="https://wa.me/237673574000?text=Je%20veux%20TV">
+<button class="btn">Commander TV</button>
+</a>
+</section>
+
+<!-- PAIEMENT -->
+<section class="payment">
+<h2>💳 Paiement Mobile</h2>
+
+<p><b>MTN MOMO</b></p>
+<p>*126*14*677399964*montant#</p>
+<p>Nom : OMBIONO GUY BERTRAND</p>
+
+<p><b>Orange Money</b></p>
+<p>#146*46*699205684*montant#</p>
+</section>
+
+<!-- FORM -->
+<section class="hero">
+<h2>📝 Demande d'installation</h2>
+
+<form onsubmit="envoyerWhatsApp(); return false;">
+<input type="text" id="nom" placeholder="Nom"><br>
+<input type="text" id="zone" placeholder="Quartier"><br>
+<input type="text" id="numero" placeholder="Téléphone"><br>
+
+<button class="btn">Envoyer</button>
+</form>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>📞 Contact WhatsApp</h2>
+
+<a href="https://wa.me/237673574000">
+📲 Direction : Bertrand
+</a>
+
+<a href="https://wa.me/237699205684">
+📲 Service Commercial
+</a>
+
+<a href="https://wa.me/237677399964">
+📲 Bureau Technique
+</a>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/237673574000">
+💬
+</a>
+
+<script>
+function envoyerWhatsApp() {
+    let nom = document.getElementById("nom").value;
+    let zone = document.getElementById("zone").value;
+    let numero = document.getElementById("numero").value;
+
+    let message = `Nom: ${nom} %0A Quartier: ${zone} %0A Tel: ${numero}`;
+
+    window.open(`https://wa.me/237673574000?text=${message}`);
+}
+</script>
+
+</body>
+</html>
