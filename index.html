@@ -31,17 +31,18 @@ header {
     display: flex;
     width: 200%;
     height: 100%;
-    animation: slide 120s infinite;
+    animation: slide 600s infinite;
 }
 
-.slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+<div class="slider">
+  <img id="slide" src="fibre.jpeg">
+  <img id="slide" src="presentation.jpeg">  
+
+  <div class="buttons">
+    <button onclick="prev()">←</button>
+    <button onclick="next()">→</button>
+  </div>
+</div>
 }
 
 /* ANIMATION */
